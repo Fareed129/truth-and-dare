@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h1>Truth or Dare</h1>
+    </div>
+
+    <div id="main">
+        <button id="createRoomBtn" class="jbtn">Create Room</button>
+        <button id="joinRoomBtn" class="jbtn">Join Room</button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <div id="players">
+            <div id="user1">User 1</div>
+            <img id="bottle" src="bottle.png" alt="bottle" height="200">
+            <div id="user2">User 2</div>
+        </div>
+        <button id="spinBtn">Spin</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+<footer>
+    <p>&copy; All rights are Reserved. | Design by Web D...</p>
+    <p> &#10084; | By Mo. Fareed </p>
+</footer>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
